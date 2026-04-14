@@ -1,0 +1,119 @@
+{
+  "default": {
+    "reels": [
+      ["S1","S2","S3"],
+      ["S4","S5","S6"],
+      ["S7","S8","S9"],
+      ["S1","S3","S5"],
+      ["S2","S4","S6"]
+    ],
+    "win": null
+  },
+
+  "spins": [
+    {
+      "reels": [
+        ["S4","S4","S4"],
+        ["S2","S5","S7"],
+        ["S3","S6","S9"],
+        ["S1","S8","S2"],
+        ["S5","S5","S5"]
+      ],
+      "win": {
+        "amount": 100,
+        "type": "LINE",
+        "winLines": [
+          {
+            "lineIndex": 0,
+            "symbol": "S4",
+            "positions": [
+              { "reel": 0, "row": 0 },
+              { "reel": 0, "row": 1 },
+              { "reel": 0, "row": 2 }
+            ]
+          },
+          {
+            "lineIndex": 2,
+            "symbol": "S5",
+            "positions": [
+              { "reel": 4, "row": 0 },
+              { "reel": 4, "row": 1 },
+              { "reel": 4, "row": 2 }
+            ]
+          }
+        ]
+      }
+    },
+
+    {
+      "reels": [
+        ["S1","S2","S3"],
+        ["S4","S5","S6"],
+        ["S7","S8","S9"],
+        ["S2","S3","S4"],
+        ["S6","S7","S8"]
+      ],
+      "win": null
+    },
+
+    {
+      "reels": [
+        ["S7","S7","S7"],
+        ["S7","S7","S7"],
+        ["S7","S7","S7"],
+        ["S7","S7","S7"],
+        ["S7","S7","S7"]
+      ],
+      "win": {
+        "amount": 500,
+        "type": "BIG_WIN",
+        "winLines": [
+          {
+            "lineIndex": 1,
+            "symbol": "S7",
+            "positions": [
+              { "reel": 0, "row": 1 },
+              { "reel": 1, "row": 1 },
+              { "reel": 2, "row": 1 },
+              { "reel": 3, "row": 1 },
+              { "reel": 4, "row": 1 }
+            ]
+          },
+          {
+            "lineIndex": 0,
+            "symbol": "S7",
+            "positions": [
+              { "reel": 0, "row": 0 },
+              { "reel": 1, "row": 0 },
+              { "reel": 2, "row": 0 },
+              { "reel": 3, "row": 0 },
+              { "reel": 4, "row": 0 }
+            ]
+          },
+          {
+            "lineIndex": 2,
+            "symbol": "S7",
+            "positions": [
+              { "reel": 0, "row": 2 },
+              { "reel": 1, "row": 2 },
+              { "reel": 2, "row": 2 },
+              { "reel": 3, "row": 2 },
+              { "reel": 4, "row": 2 }
+            ]
+          }
+        ]
+      }
+    },
+
+    {
+      "reels": [
+        ["S9","S2","S4"],
+        ["S1","S3","S5"],
+        ["S6","S8","S7"],
+        ["S2","S4","S9"],
+        ["S3","S1","S6"]
+      ],
+      "win": null
+    }
+  ]
+}
