@@ -37,7 +37,6 @@ class PanelController extends EventEmitter {
         if(slot.reelsController?.win) {
             //Nije tacna logika, ali sam stavila cisto da bet isto utice na win jer moze da se menja
             this.winAmount += Number(slot.reelsController?.win?.amount) * this.betAmount;
-            console.log(this.winAmount);
             this.emit(WIN_CHANGE, this.winAmount);
         }
     }
